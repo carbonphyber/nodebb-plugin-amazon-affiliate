@@ -1,0 +1,33 @@
+{
+  "name": "nodebb-plugin-amazon-affiliate",
+  "version": "0.0.1",
+  "description": "NodeBB Amazon Affiliate Plugin",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbonphyber/nodebb-plugin-amazon-affiliate"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "amazon",
+    "affiliate",
+    "marketing",
+    "tracking"
+  ],
+  "author": {
+    "name": "carbonphyber",
+    "email": "djwortham@gmail.com"
+  },
+  "license": "GPL v2",
+  "bugs": {
+    "url": "https://github.com/carbonphyber/nodebb-plugin-amazon-affiliate/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-plugin-amazon-affiliate@0.0.1",
+  "_from": "nodebb-plugin-amazon-affiliate@~0.0.1"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "nodebb-plugin-amazon-affiliate",
+    "name": "NodeBB Amazon Affiliate Plugin",
+    "description": "NodeBB plugin to rewrite links in posts to amazon.com with your affiliate code.",
+    "url": "https://github.com/carbonphyber/nodebb-plugin-amazon-affiliate",
+    "library": "./library.js",
+    "hooks": [
+        { "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+    ]
+}
