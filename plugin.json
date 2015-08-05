@@ -1,13 +1,17 @@
 {
     "id": "nodebb-plugin-amazon-affiliate",
     "name": "NodeBB Amazon Affiliate Plugin",
-    "description": "NodeBB plugin to rewrite links in posts to amazon.com with your affiliate code.",
+    "description": "Rewrites amazon.com links in posts and signatures to include your affiliate tag",
     "url": "https://github.com/carbonphyber/nodebb-plugin-amazon-affiliate",
     "library": "./library.js",
     "hooks": [
         {
             "hook": "filter:parse.post",
-            "method": "parse",
+            "method": "parsePost",
+            "callbacked": true
+        }, {
+            "hook": "filter:parse.signature",
+            "method": "parseSignature",
             "callbacked": true
         }
     ]
