@@ -2,7 +2,8 @@
     "use strict";
 
     var AmazonAffiliate = {},
-        embed = '<a href="$1?tag=daviwort05-20" rel="nofollow">$2</a>';
+        affiliateCode = 'daviwort05-20',
+        embed = '<a href="$1?' + affiliateCode + '" rel="nofollow">$2</a>';
 
 
     AmazonAffiliate.parse = function(data, callback) {
