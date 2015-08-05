@@ -5,6 +5,10 @@
     "url": "https://github.com/carbonphyber/nodebb-plugin-amazon-affiliate",
     "library": "./library.js",
     "hooks": [
-        { "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+        {
+            "hook": "filter:parse.post",
+            "method": "parse",
+            "callbacked": true
+        }
     ]
 }
