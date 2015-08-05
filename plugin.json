@@ -7,11 +7,11 @@
     "hooks": [
         {
             "hook": "filter:parse.post",
-            "method": "parsePost",
+            "method": "parse",
             "callbacked": true
         }, {
             "hook": "filter:parse.signature",
-            "method": "parseSignature",
+            "method": "parse",
             "callbacked": true
         }
     ]

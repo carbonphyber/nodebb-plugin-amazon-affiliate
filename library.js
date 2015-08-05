@@ -35,17 +35,10 @@
         };
 
         // for posts
-        AmazonAffiliate.parsePost = function(data, callback) {
+        AmazonAffiliate.parse = function(data, callback) {
             if (data.hasOwnProperty('postData')) {
                 data.postData.content = AmazonAffiliate.replaceAmazonLinks(data.postData.content);
-            }
-
-            callback(null, data);
-        };
-
-        // for user signatures
-        AmazonAffiliate.parseSignature = function(data, callback) {
-            if (data.hasOwnProperty('userData') && data.userData.hasOwnProperty('signature')) {
+            } else if (data.hasOwnProperty('userData') && data.userData.hasOwnProperty('signature')) {
                 data.userData.signature = AmazonAffiliate.replaceAmazonLinks(data.userData.signature);
             }
 
