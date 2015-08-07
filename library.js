@@ -40,6 +40,8 @@
                 data.postData.content = AmazonAffiliate.replaceAmazonLinks(data.postData.content);
             } else if (data.hasOwnProperty('userData') && data.userData.hasOwnProperty('signature')) {
                 data.userData.signature = AmazonAffiliate.replaceAmazonLinks(data.userData.signature);
+            } else if (data.hasOwnProperty('parsedMessage')) {
+                data.parsedMessage = AmazonAffiliate.replaceAmazonLinks(data.parsedMessage);
             }
 
             callback(null, data);
